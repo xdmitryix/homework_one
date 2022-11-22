@@ -3,13 +3,15 @@ Console.Write("введи первое число: ");
 int number_one = int.Parse(Console.ReadLine());
 Console.Write("введи второе число: ");
 int number_two = int.Parse(Console.ReadLine());
-int max = 0;
 if (number_one>number_two)
 {
-    max = number_one;
+    Console.WriteLine($"число {number_one} больше числа {number_two}");
 }
-else
+if (number_one<number_two)
 {
-    max = number_two;
+    Console.WriteLine($"число {number_one} меньше числа {number_two}");
 }
-Console.WriteLine($"максимальное число: {max}");
+if (number_one == number_two)
+{
+    Console.WriteLine("числа одинаковы");
+}
